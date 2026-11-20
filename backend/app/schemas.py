@@ -89,6 +89,18 @@ class RobotTaskEntry(BaseModel):
     field_6: str | None = None  # 超时秒数
     field_7: str | None = None  # 执行批次
 
+class RpaDatasetEntry(BaseModel):
+    """RPA采集结果明细结构。"""
+
+    field_0: str | None = None  # 记录编号
+    field_1: str | None = None  # 任务编号
+    field_2: str | None = None  # 执行批次
+    field_3: str | None = None  # 页面标识
+    field_4: str | None = None  # 页面地址
+    field_5: str | None = None  # 动作位置
+    field_6: str | None = None  # 定义版本
+    field_7: str | None = None  # 记录状态
+
 class IngestionEntry(BaseModel):
     """接入通道明细结构。"""
 
